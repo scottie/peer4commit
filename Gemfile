@@ -71,11 +71,11 @@ gem 'rqrcode-rails3'
 gem 'exception_notification'
 gem 'rack-canonical-host'
 gem 'bootstrap_form', github: 'sigmike/rails-bootstrap-forms', branch: 'removed_for_on_radio_label'
-gem 'html_pipeline_rails'
+gem 'html_pipeline_rails', '>= 0.1.0'
 gem 'rails_autolink'
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.0', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
   gem 'rspec-rails'
