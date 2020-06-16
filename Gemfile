@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.0.2'
+gem 'rails', '~> 5.0.0'
 
 # Databases
 gem 'sqlite3', group: :development
@@ -9,28 +9,28 @@ gem 'mysql2', group: :mysql
 gem 'pg', group: :postgresql
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-gem 'haml-rails'
-gem "less-rails"
+gem 'sass-rails', '~> 5.0.5'
+gem 'haml-rails', '>= 0.5.3'
+gem "less-rails", ">= 2.4.2"
 
 gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 
-gem 'kaminari'
+gem 'kaminari', '>= 0.15.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.2.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -40,8 +40,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'devise'
-gem 'omniauth'
+gem 'devise', '>= 4.0.0'
+gem 'omniauth', '>= 1.1.4'
 gem 'omniauth-github', github: 'alexandrz/omniauth-github', branch: 'provide_emails'
 gem 'cancancan'
 
@@ -61,23 +61,23 @@ group :development do
   gem 'capistrano-rvm', github: 'capistrano/rvm'
   gem 'capistrano-bundler', '>= 1.1.0'
   gem 'capistrano-rails'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
 end
 
 gem 'airbrake'
 gem 'httparty'
 gem 'whenever'
 gem 'rqrcode-rails3'
-gem 'exception_notification'
-gem 'rack-canonical-host'
+gem 'exception_notification', '>= 4.0.1'
+gem 'rack-canonical-host', '>= 0.2.1'
 gem 'bootstrap_form', github: 'sigmike/rails-bootstrap-forms', branch: 'removed_for_on_radio_label'
 gem 'html_pipeline_rails'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.5'
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 1.4.0', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 2.14.1'
+  gem 'factory_girl_rails', '>= 4.4.1'
 end
