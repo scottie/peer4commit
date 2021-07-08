@@ -45,7 +45,7 @@ gem 'omniauth'
 gem 'omniauth-github', github: 'alexandrz/omniauth-github', branch: 'provide_emails'
 gem 'cancancan'
 
-gem 'octokit'
+gem 'octokit', '>= 4.6.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -69,7 +69,7 @@ gem 'httparty'
 gem 'whenever'
 gem 'rqrcode-rails3'
 gem 'exception_notification'
-gem 'rack-canonical-host'
+gem 'rack-canonical-host', '>= 0.0.8'
 gem 'bootstrap_form', github: 'sigmike/rails-bootstrap-forms', branch: 'removed_for_on_radio_label'
 gem 'html_pipeline_rails'
 gem 'rails_autolink'
