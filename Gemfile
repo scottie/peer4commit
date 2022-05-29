@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.0.2'
+gem 'rails', '~> 5.0.0'
 
 # Databases
 gem 'sqlite3', group: :development
@@ -9,7 +9,7 @@ gem 'mysql2', group: :mysql
 gem 'pg', group: :postgresql
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.5'
 gem 'haml-rails'
 gem "less-rails"
 
@@ -21,13 +21,13 @@ gem 'kaminari'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -40,7 +40,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-gem 'devise'
+gem 'devise', '>= 4.0.0'
 gem 'omniauth'
 gem 'omniauth-github', github: 'alexandrz/omniauth-github', branch: 'provide_emails'
 gem 'cancancan'
@@ -69,7 +69,7 @@ gem 'httparty'
 gem 'whenever'
 gem 'rqrcode-rails3'
 gem 'exception_notification'
-gem 'rack-canonical-host'
+gem 'rack-canonical-host', '>= 0.2.1'
 gem 'bootstrap_form', github: 'sigmike/rails-bootstrap-forms', branch: 'removed_for_on_radio_label'
 gem 'html_pipeline_rails'
 gem 'rails_autolink'
