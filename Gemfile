@@ -41,7 +41,7 @@ group :doc do
 end
 
 gem 'devise'
-gem 'omniauth'
+gem 'omniauth', '>= 2.0.0'
 gem 'omniauth-github', github: 'alexandrz/omniauth-github', branch: 'provide_emails'
 gem 'cancancan'
 
