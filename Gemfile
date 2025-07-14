@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.0.2'
+gem 'rails', '~> 7.1.0'
 
 # Databases
 gem 'sqlite3', group: :development
@@ -10,42 +10,42 @@ gem 'pg', group: :postgresql
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-gem 'haml-rails'
-gem "less-rails"
+gem 'haml-rails', '>= 1.0.0'
+gem "less-rails", ">= 2.5.0"
 
 gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails', branch: 'bootstrap3'
 
-gem 'kaminari'
+gem 'kaminari', '>= 0.15.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder', '~> 2.0', '>= 2.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
-gem 'devise'
-gem 'omniauth'
+gem 'devise', '>= 4.7.0'
+gem 'omniauth', '>= 2.1.0'
 gem 'omniauth-github', github: 'alexandrz/omniauth-github', branch: 'provide_emails'
 gem 'cancancan'
 
-gem 'octokit'
+gem 'octokit', '>= 4.6.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -57,27 +57,27 @@ gem 'octokit'
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-  gem 'capistrano', '~> 3.0'
+  gem 'capistrano', '~> 3.1', '>= 3.1.0'
   gem 'capistrano-rvm', github: 'capistrano/rvm'
-  gem 'capistrano-bundler', '>= 1.1.0'
-  gem 'capistrano-rails'
-  gem 'quiet_assets'
+  gem 'capistrano-bundler', '>= 1.1.2'
+  gem 'capistrano-rails', '>= 1.1.1'
+  gem 'quiet_assets', '>= 1.0.3'
 end
 
 gem 'airbrake'
 gem 'httparty'
 gem 'whenever'
 gem 'rqrcode-rails3'
-gem 'exception_notification'
-gem 'rack-canonical-host'
+gem 'exception_notification', '>= 4.1.0'
+gem 'rack-canonical-host', '>= 1.2.0'
 gem 'bootstrap_form', github: 'sigmike/rails-bootstrap-forms', branch: 'removed_for_on_radio_label'
 gem 'html_pipeline_rails'
 gem 'rails_autolink'
 
 group :test do
-  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails', '>= 3.0.0', :require => false
   # database_cleaner is not required, but highly recommended
   gem 'database_cleaner'
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'rspec-rails', '>= 2.14.2'
+  gem 'factory_girl_rails', '>= 4.5.0'
 end
